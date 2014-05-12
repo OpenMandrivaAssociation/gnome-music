@@ -5,7 +5,7 @@ Version:	3.12.1
 Release:	1
 Summary:	Music player and management application
 License:	GPLv2+
-Group:		Sound/Players
+Group:		Sound
 URL:		https://wiki.gnome.org/Design/Apps/Music
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	intltool
