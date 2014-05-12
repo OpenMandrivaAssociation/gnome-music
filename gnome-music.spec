@@ -1,5 +1,4 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
-%define _exclude_files_from_autoprov %{_libdir}/%{name}
 
 Name:		gnome-music
 Version:	3.12.1
