@@ -37,7 +37,7 @@ Music is the new GNOME music playing application.
 
 find %{buildroot} -name '*.la' -delete
 
-%find_lang %{name} --with-help
+%find_lang %{name}
 
 %files -f %{name}.lang
 %doc README NEWS
@@ -49,4 +49,5 @@ find %{buildroot} -name '*.la' -delete
 %{_datadir}/%{name}
 %{_iconsdir}/*/*/*/*
 %{_datadir}/appdata/%{name}.appdata.xml
+%{_datadir}/help/*/gnome-music/*
 
