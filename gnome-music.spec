@@ -54,4 +54,4 @@ find %{buildroot} -name '*.la' -delete
 %{_iconsdir}/*/*/*/*
 %{_datadir}/appdata/%{name}.appdata.xml
 %{_datadir}/help/*/gnome-music/*
-
+%{_mandir}/man1/gnome-music.1*
