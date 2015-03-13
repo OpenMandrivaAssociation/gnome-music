@@ -14,6 +14,7 @@ BuildRequires:	pkgconfig(gobject-introspection-1.0) >= 1.35.9
 BuildRequires:	pkgconfig(grilo-0.2) >= 0.2.6
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.8
 BuildRequires:	pkgconfig(libmediaart-2.0)
+BuildRequires:	pkgconfig(libgdata)
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
 Requires:	gnome-settings-daemon
