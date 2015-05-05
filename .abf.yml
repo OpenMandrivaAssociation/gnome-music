@@ -1,2 +1,4 @@
+removed_sources:
+  gnome-music-3.12.1.tar.xz: 67e07d293487e47c382f48d7cab8388636a611e7
 sources:
-  "gnome-music-3.12.1.tar.xz": 67e07d293487e47c382f48d7cab8388636a611e7
+  gnome-music-3.16.1.tar.xz: 7eb180948d3c4865c3f957da26e9c66f143d31c2
