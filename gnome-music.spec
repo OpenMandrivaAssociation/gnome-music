@@ -1,8 +1,9 @@
+%define _disable_rebuild_configure 1
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
 Name:		gnome-music
 Version:	3.18.0
-Release:	4
+Release:	1
 Summary:	Music player and management application
 License:	GPLv2+
 Group:		Sound
