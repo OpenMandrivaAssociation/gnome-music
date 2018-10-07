@@ -12,11 +12,14 @@ Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version
 BuildRequires:	intltool
 BuildRequires:	python3
 BuildRequires:	pkgconfig(gobject-introspection-1.0) >= 1.35.9
-BuildRequires:	pkgconfig(grilo-0.3)6
+BuildRequires:	pkgconfig(grilo-0.3)
+BuildRequires:	pkgconfig(grilo-plugins-0.3)
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.8
 BuildRequires:	pkgconfig(libmediaart-2.0)
+BuildRequires:	pkgconfig(tracker-sparql-2.0)
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
+BuildRequires:	meson
 Requires:	gnome-settings-daemon
 Requires:	grilo
 Requires:	python-dbus
@@ -31,11 +34,11 @@ Music is the new GNOME music playing application.
 %setup -q
 
 %build
-%configure
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 %find_lang %{name} --with-gnome
 
