@@ -2,7 +2,7 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
 Name:		gnome-music
-Version:	3.18.0
+Version:	3.30.1
 Release:	1
 Summary:	Music player and management application
 License:	GPLv2+
@@ -12,7 +12,7 @@ Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version
 BuildRequires:	intltool
 BuildRequires:	python3
 BuildRequires:	pkgconfig(gobject-introspection-1.0) >= 1.35.9
-BuildRequires:	pkgconfig(grilo-0.2) >= 0.2.6
+BuildRequires:	pkgconfig(grilo-0.3)6
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.8
 BuildRequires:	pkgconfig(libmediaart-2.0)
 BuildRequires:	itstool
