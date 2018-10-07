@@ -11,6 +11,7 @@ URL:		https://wiki.gnome.org/Design/Apps/Music
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	intltool
 BuildRequires:	python3
+BuildRequires:	pkgconfig(goa-1.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0) >= 1.35.9
 BuildRequires:	pkgconfig(grilo-0.3)
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.8
