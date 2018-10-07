@@ -13,7 +13,6 @@ BuildRequires:	intltool
 BuildRequires:	python3
 BuildRequires:	pkgconfig(gobject-introspection-1.0) >= 1.35.9
 BuildRequires:	pkgconfig(grilo-0.3)
-BuildRequires:	pkgconfig(grilo-plugins)
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.8
 BuildRequires:	pkgconfig(libmediaart-2.0)
 BuildRequires:	pkgconfig(tracker-sparql-2.0)
