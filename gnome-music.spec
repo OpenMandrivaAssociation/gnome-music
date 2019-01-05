@@ -20,6 +20,7 @@ BuildRequires:	pkgconfig(tracker-sparql-2.0)
 BuildRequires:  pkgconfig(libdazzle-1.0)
 BuildRequires:  pkgconfig(libsoup-2.4)
 BuildRequires:  pkgconfig(pygobject-3.0)
+BuildRequires:  pkgconfig(py3cairo)
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
 BuildRequires:	meson
