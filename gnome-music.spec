@@ -24,7 +24,7 @@ BuildRequires:  pkgconfig(py3cairo)
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
 BuildRequires:	meson
-BuildRequires:  grilo-plugins
+BuildRequires:  pkgconfig(grilo-plugins-0.3)
 Requires:	gnome-settings-daemon
 Requires:	grilo
 Requires:	python-dbus
