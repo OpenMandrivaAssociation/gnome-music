@@ -18,6 +18,7 @@ BuildRequires:	pkgconfig(gtk+-3.0) >= 3.8
 BuildRequires:	pkgconfig(libmediaart-2.0)
 BuildRequires:	pkgconfig(tracker-sparql-2.0)
 BuildRequires:  pkgconfig(libdazzle-1.0)
+BuildRequires:  pkgconfig(libsoup-2.4)
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
 BuildRequires:	meson
