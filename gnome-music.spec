@@ -3,7 +3,7 @@
 
 Name:		gnome-music
 Version:	3.30.2
-Release:	1
+Release:	2
 Summary:	Music player and management application
 License:	GPLv2+
 Group:		Sound
@@ -30,7 +30,14 @@ Requires:	grilo
 Requires:	python-dbus
 Requires:	python-gi
 Requires:	tracker
-Requires:	grilo-plugins
+Requires: typelib(GIRepository)
+Requires:	typelib(Grl)
+Requires:	typelib(MediaArt)
+Requires:	typelib(TotemPlParser)
+Requires:	typelib(Tracker) = 2.0
+Requires: typelib(Goa)
+Recommends:	grilo-plugins
+
 
 %description
 Music is the new GNOME music playing application.
