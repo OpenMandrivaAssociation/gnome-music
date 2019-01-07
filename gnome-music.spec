@@ -30,7 +30,7 @@ Requires:	grilo
 Requires:	python-dbus
 Requires:	python-gi
 Requires:	tracker
-Suggests:	grilo-plugins
+Requires:	grilo-plugins
 
 %description
 Music is the new GNOME music playing application.
@@ -48,14 +48,14 @@ Music is the new GNOME music playing application.
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
-%doc README NEWS
+%doc NEWS
 %{_bindir}/%{name}
-%{_libdir}/%{name}
+#{_libdir}/%{name}
 %{py3_puresitedir}/gnomemusic
 %{_datadir}/applications/*.desktop
 %{_datadir}/glib-2.0/schemas/*.xml
 %{_datadir}/%{name}
 %{_iconsdir}/*/*/*/*
-%{_datadir}/appdata/%{name}.appdata.xml
-%{_mandir}/man1/%{name}.1*
+#{_datadir}/appdata/%{name}.appdata.xml
+#{_mandir}/man1/%{name}.1*
 
