@@ -2,7 +2,7 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
 Name:		gnome-music
-Version:	3.30.1
+Version:	3.30.2
 Release:	1
 Summary:	Music player and management application
 License:	GPLv2+
@@ -47,15 +47,16 @@ Music is the new GNOME music playing application.
 
 %find_lang %{name} --with-gnome
 
+find %{buildroot} -name '*.la' -delete
+
+
 %files -f %{name}.lang
-%doc NEWS
 %{_bindir}/%{name}
-#{_libdir}/%{name}
-%{py3_puresitedir}/gnomemusic
+%{_libdir}/org.gnome.Music/
+%{python3_sitelib}/gnomemusic
 %{_datadir}/applications/*.desktop
 %{_datadir}/glib-2.0/schemas/*.xml
-%{_datadir}/%{name}
+%{_datadir}/org.gnome.Music/
 %{_iconsdir}/*/*/*/*
-#{_datadir}/appdata/%{name}.appdata.xml
-#{_mandir}/man1/%{name}.1*
+%{_datadir}/metainfo/org.gnome.Music.appdata.xml
 
