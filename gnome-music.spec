@@ -2,7 +2,7 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
 Name:		gnome-music
-Version:	3.34.0
+Version:	3.34.1
 Release:	1
 Summary:	Music player and management application
 License:	GPLv2+
@@ -37,6 +37,24 @@ Requires:	typelib(TotemPlParser)
 Requires:	typelib(Tracker) = 2.0
 Requires: typelib(Goa)
 Requires: typelib(Dazzle)
+
+Requires: typelib(Atk)
+Requires: typelib(GLib)
+Requires: typelib(GModule)
+Requires: typelib(GObject)
+Requires: typelib(Gdk)
+Requires: typelib(GdkPixbuf)
+Requires: typelib(Gfm)
+Requires: typelib(Gio)
+Requires: typelib(Gst)
+Requires: typelib(GstPbutils)
+Requires: typelib(GstTag)
+Requires: typelib(Gtk)
+Requires: typelib(Pango)
+Requires: typelib(Soup)
+Requires: typelib(cairo)
+Requires: typelib(xlib)
+
 Recommends:	grilo-plugins
 
 
