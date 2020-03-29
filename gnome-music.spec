@@ -2,7 +2,7 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
 Name:		gnome-music
-Version:	3.36.0
+Version:	3.36.1
 Release:	1
 Summary:	Music player and management application
 License:	GPLv2+
