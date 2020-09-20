@@ -34,7 +34,7 @@ Requires: typelib(GIRepository)
 Requires:	typelib(Grl)
 Requires:	typelib(MediaArt)
 Requires:	typelib(TotemPlParser)
-Requires:	typelib(Tracker) = 2.0
+Requires:	typelib(Tracker)
 Requires: typelib(Goa)
 Requires: typelib(Dazzle)
 
