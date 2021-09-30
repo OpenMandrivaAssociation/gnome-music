@@ -21,6 +21,7 @@ BuildRequires:  pkgconfig(libdazzle-1.0)
 BuildRequires:  pkgconfig(libsoup-2.4)
 BuildRequires:  pkgconfig(pygobject-3.0)
 BuildRequires:  pkgconfig(py3cairo)
+BuildRequires:  pkgconfig(libhandy-1)
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
 BuildRequires:	meson
