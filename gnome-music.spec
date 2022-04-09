@@ -3,12 +3,13 @@
 
 Name:		gnome-music
 Version:	41.0
-Release:	1
+Release:	2
 Summary:	Music player and management application
 License:	GPLv2+
 Group:		Sound
 URL:		https://wiki.gnome.org/Design/Apps/Music
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+Patch0:   https://github.com/GNOME/gnome-music/commit/090746016b4e1873fd090ffc13e36e06e872529a.patch
 BuildRequires:	intltool
 BuildRequires:	python3
 BuildRequires:	pkgconfig(goa-1.0)
@@ -63,7 +64,7 @@ Recommends:	grilo-plugins
 Music is the new GNOME music playing application.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %meson
