@@ -2,8 +2,8 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
 Name:		gnome-music
-Version:	41.0
-Release:	2
+Version:	42.0
+Release:	1
 Summary:	Music player and management application
 License:	GPLv2+
 Group:		Sound
@@ -15,7 +15,7 @@ BuildRequires:	python3
 BuildRequires:	pkgconfig(goa-1.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0) >= 1.35.9
 BuildRequires:	pkgconfig(grilo-0.3)
-BuildRequires:	pkgconfig(gtk+-3.0) >= 3.8
+BuildRequires:	pkgconfig(gtk4)
 BuildRequires:	pkgconfig(libmediaart-2.0)
 BuildRequires:	pkgconfig(tracker-sparql-3.0)
 BuildRequires:  pkgconfig(libdazzle-1.0)
