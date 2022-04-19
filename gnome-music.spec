@@ -81,12 +81,12 @@ find %{buildroot} -name '*.la' -delete
 
 %files -f %{name}.lang
 %{_bindir}/%{name}
-%{_libdir}/org.gnome.Music/
+#{_libdir}/org.gnome.Music/
 %{python3_sitelib}/gnomemusic
 %{_datadir}/applications/*.desktop
 %{_datadir}/glib-2.0/schemas/*.xml
 %{_datadir}/org.gnome.Music/
 %{_iconsdir}/*/*/*/*
 %{_datadir}/metainfo/org.gnome.Music.appdata.xml
-#{_datadir}/locale/*/LC_MESSAGES/org.gnome.Music.mo
+%{_datadir}/locale/*/LC_MESSAGES/org.gnome.Music.mo
 
