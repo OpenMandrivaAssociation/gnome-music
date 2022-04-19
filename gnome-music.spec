@@ -1,3 +1,4 @@
+%define _empty_manifest_terminate_build 0
 %define _disable_rebuild_configure 1
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
