@@ -17,6 +17,7 @@ BuildRequires:	pkgconfig(gobject-introspection-1.0) >= 1.35.9
 BuildRequires:	pkgconfig(grilo-0.3)
 BuildRequires:	pkgconfig(gtk4)
 BuildRequires:	pkgconfig(libmediaart-2.0)
+BuildRequires:  pkgconfig(libadwaita-1)
 BuildRequires:	pkgconfig(tracker-sparql-3.0)
 BuildRequires:  pkgconfig(libdazzle-1.0)
 BuildRequires:  pkgconfig(libsoup-2.4)
