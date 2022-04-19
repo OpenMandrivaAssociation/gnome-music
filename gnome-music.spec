@@ -1,22 +1,24 @@
+%define _empty_manifest_terminate_build 0
 %define _disable_rebuild_configure 1
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
 Name:		gnome-music
-Version:	41.0
-Release:	2
+Version:	42.0
+Release:	1
 Summary:	Music player and management application
 License:	GPLv2+
 Group:		Sound
 URL:		https://wiki.gnome.org/Design/Apps/Music
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
-Patch0:   https://github.com/GNOME/gnome-music/commit/090746016b4e1873fd090ffc13e36e06e872529a.patch
+
 BuildRequires:	intltool
 BuildRequires:	python3
 BuildRequires:	pkgconfig(goa-1.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0) >= 1.35.9
 BuildRequires:	pkgconfig(grilo-0.3)
-BuildRequires:	pkgconfig(gtk+-3.0) >= 3.8
+BuildRequires:	pkgconfig(gtk4)
 BuildRequires:	pkgconfig(libmediaart-2.0)
+BuildRequires:  pkgconfig(libadwaita-1)
 BuildRequires:	pkgconfig(tracker-sparql-3.0)
 BuildRequires:  pkgconfig(libdazzle-1.0)
 BuildRequires:  pkgconfig(libsoup-2.4)
@@ -80,7 +82,7 @@ find %{buildroot} -name '*.la' -delete
 
 %files -f %{name}.lang
 %{_bindir}/%{name}
-%{_libdir}/org.gnome.Music/
+#{_libdir}/org.gnome.Music/
 %{python3_sitelib}/gnomemusic
 %{_datadir}/applications/*.desktop
 %{_datadir}/glib-2.0/schemas/*.xml
