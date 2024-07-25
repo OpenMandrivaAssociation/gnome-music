@@ -4,7 +4,7 @@
 
 Name:		gnome-music
 Version:	46.1
-Release:	1
+Release:	2
 Summary:	Music player and management application
 License:	GPLv2+
 Group:		Sound
@@ -33,6 +33,7 @@ BuildRequires:	libxml2-utils
 BuildRequires:	meson
 BuildRequires:  pkgconfig(grilo-plugins-0.3)
 Requires:	gnome-settings-daemon
+Requires: python-gobject3
 Requires:	grilo
 Requires:	python-dbus
 Requires:	python-gi
