@@ -37,7 +37,7 @@ Requires: python-gobject3
 Requires:	grilo
 Requires:	python-dbus
 Requires:	python-gi
-Requires:	tracker
+Requires:	tinysparql
 Requires: typelib(GIRepository)
 Requires:	typelib(Grl)
 Requires:	typelib(MediaArt)
