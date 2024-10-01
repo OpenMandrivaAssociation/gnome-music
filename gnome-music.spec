@@ -4,7 +4,7 @@
 
 Name:		gnome-music
 Version:	47.0
-Release:	1
+Release:	2
 Summary:	Music player and management application
 License:	GPLv2+
 Group:		Sound
@@ -21,7 +21,7 @@ BuildRequires:	pkgconfig(gtk4)
 BuildRequires:  pkgconfig(libadwaita-1)
 BuildRequires:	pkgconfig(libmediaart-2.0)
 BuildRequires:  pkgconfig(libadwaita-1)
-BuildRequires:	pkgconfig(tracker-sparql-3.0)
+BuildRequires:	pkgconfig(tinysparql-3.0)
 BuildRequires:  pkgconfig(libdazzle-1.0)
 BuildRequires:  pkgconfig(libsoup-3.0)
 BuildRequires:  pkgconfig(pango)
