@@ -92,6 +92,6 @@ find %{buildroot} -name '*.la' -delete
 %{_datadir}/glib-2.0/schemas/*.xml
 %{_datadir}/org.gnome.Music/
 %{_iconsdir}/*/*/*/*
-%{_datadir}/metainfo/org.gnome.Music.appdata.xml
+#{_datadir}/metainfo/org.gnome.Music.appdata.xml
 %{_datadir}/locale/*/LC_MESSAGES/org.gnome.Music.mo
 
