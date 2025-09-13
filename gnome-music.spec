@@ -95,4 +95,5 @@ find %{buildroot} -name '*.la' -delete
 %{_iconsdir}/*/*/*/*
 %{_datadir}/metainfo/org.gnome.Music.metainfo.xml
 %{_datadir}/locale/*/LC_MESSAGES/org.gnome.Music.mo
+%{_datadir}/dbus-1/services/org.gnome.Music.service
 
