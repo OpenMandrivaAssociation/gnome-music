@@ -1,6 +1,8 @@
 %define _empty_manifest_terminate_build 0
 %define _disable_rebuild_configure 1
 %define url_ver %(echo %{version}|cut -d. -f1,2)
+# exclude bohus typelib
+%global __requires_exclude ^typelib\\(TSparql\\)$
 
 Name:		gnome-music
 Version:	50.0
@@ -46,7 +48,7 @@ Requires:	typelib(TotemPlParser)
 Requires:	typelib(Tracker)
 Requires: typelib(Goa)
 Requires: typelib(Dazzle)
-
+Requires: typelib(Tsparql)
 Requires: typelib(Atk)
 Requires: typelib(GLib)
 Requires: typelib(GModule)
