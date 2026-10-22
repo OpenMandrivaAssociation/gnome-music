@@ -6,7 +6,7 @@
 
 Name:		gnome-music
 Version:	50.0
-Release:	4
+Release:	5
 Summary:	Music player and management application
 License:	GPLv2+
 Group:		Sound
